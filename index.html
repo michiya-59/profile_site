@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+  <title>My Profile</title>
+</head>
+<body>
+  <header>
+    <div class="header_title">My Profile</div>
+    <nav>
+      <ul> <!-- ul の中に li を記載して下さい。 -->
+        <!-- li の中に aタグを用意し、その中にタイトル名を記載して下さい。 -->
+        <li><a href="#service">Service</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#career">Career</a></li>
+        <li><a href="#contract_form">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="first_view">
+    <img src="image/first-view-image.jpg">
+  </div>
+  <main>
+    <section id="service" class="service_section">       
+      <div class="section_title"><!-- セクションの『タイトル』 -->
+        <h1>Service</h1>
+      </div>     
+      <div class="service_contents"><!-- ３つの項目を内包する要素 -->
+        <div class="service_item">
+          <div class="service_item_title"><h2>デザイン</h2></div><!-- 項目のタイトル(日本語) -->
+          <div class="service_item_subtitle"><h3>Design</h3></div><!-- 項目のサブタイトル(英語) -->
+          <div class="service_item_image"><img src="image/service-design.png"></div><!-- 項目のイラスト -->
+          <div class="service_item_detail">
+            <p>
+              ここに詳細が記載される。ここに詳細が記載される。ここに詳細が記載される。
+              ここに詳細が記載される。ここに詳細が記載される。ここに詳細が記載される。
+              ここに詳細が記載される。ここに詳細が記載される。ここに詳細が記載される。
+            </p>
+          </div>
+        </div> 
+        <div class="service_item">
+          <div class="service_item_title"><h2>プログラミング</h2></div><!-- 項目のタイトル(日本語) -->
+          <div class="service_item_subtitle"><h3>Programing</h3></div><!-- 項目のサブタイトル(英語) -->
+          <div class="service_item_image"><img src="image/service-programing.png"></div><!-- 項目のイラスト -->
+          <div class="service_item_detail">
+            <p>
+              ここに詳細が記載される。ここに詳細が記載される。ここに詳細が記載される。
+              ここに詳細が記載される。ここに詳細が記載される。ここに詳細が記載される。
+              ここに詳細が記載される。ここに詳細が記載される。ここに詳細が記載される。
+            </p>
+          </div>
+        </div> 
+        <div class="service_item">
+          <div class="service_item_title"><h2>コンサルティング</h2></div><!-- 項目のタイトル(日本語) -->
+          <div class="service_item_subtitle"><h3>Consulting</h3></div><!-- 項目のサブタイトル(英語) -->
+          <div class="service_item_image"><img src="image/service-consulting.png"></div><!-- 項目のイラスト -->
+          <div class="service_item_detail">
+            <p>
+              ここに詳細が記載される。ここに詳細が記載される。ここに詳細が記載される。
+              ここに詳細が記載される。ここに詳細が記載される。ここに詳細が記載される。
+              ここに詳細が記載される。ここに詳細が記載される。ここに詳細が記載される。
+            </p>
+          </div>
+        </div> 
+      </div>
+    </section>
+    <section id="works" class="works_section">
+      <div class="section_title"><h1>Works</h1></div>
+      <div class="works_contents">
+        <div class="works_item"><a href="work1.html"><img src="image/work1.jpg"></a></div>
+        <div class="works_item"><a href="#"><img src="image/work2.jpg"></a></div>
+        <div class="works_item"><a href="#"><img src="image/work3.jpg"></a></div>
+        <div class="works_item"><a href="#"><img src="image/work3.jpg"></a></div>
+        <div class="works_item"><a href="#"><img src="image/work1.jpg"></a></div>
+        <div class="works_item"><a href="#"><img src="image/work2.jpg"></a></div>
+      </div>
+      <div class="view_more">
+        <a href="#">VIEW MOEW</a>
+      </div>
+    </section>
+    <section id="career" class="career_section">
+      <div class="section_title"><h1>Career</h1></div>
+      <div class="career_contents">
+        <p>2000年から webデザイナーとしてキャリアをスタート。</p>
+        <p>2003年に 東京都内の制作会社にて webデザイン部 マネージャーとしてデザイン業務に携わる。</p>
+        <p>2010年からフリーランスへ転向し、web制作やコンサルティングを行っています。</p>
+      </div>
+    </section>
+    <section id="contract_form" class="contract_form_section">
+      <div class="section_title"><h1>Contact</h1></div>
+      <form action="#">
+        <ul>
+          <li>氏名：</li>
+          <li><input type="text"></li>
+        </ul>
+        <ul>
+          <li>TEL：</li>
+          <li><input type="tel"></li>
+        </ul>
+        <ul>
+          <li>Email：</li>
+          <li><input type="email"></li>
+        </ul>
+        <ul>
+          <li>内容：</li>
+          <li><textarea cols="30" rows="10"></textarea></li>
+        </ul>
+        <ul>
+          <li><input type="submit" value="内容を送信する" class="submit"></li>
+        </ul>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div class="footer_top">
+      <nav>
+        <ul>
+          <li><a href="#">TOP</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#career">Career</a></li>
+          <li><a href="#contract_form">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer_bottom">
+      <p>©︎ SUZUKI DESIGN</p>
+    </div>
+  </footer>
+</body>
+</html>
